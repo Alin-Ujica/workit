@@ -1,0 +1,549 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+.purple {
+    width: 100%;
+    height: 650px;
+    position: absolute;
+    z-index: -1;
+}
+
+
+/* navigation */
+
+nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 5vh;
+    font-family: 'Figtree';
+}
+
+nav :nth-child(n) {
+    color: white;
+    margin: 0px 130px;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+h1 :nth-child(1) {
+    margin: 0;
+    font-weight: 400;
+}
+
+nav :nth-child(2) {
+    font-size: 20px;
+    font-weight: 400;
+    border-bottom: 3px solid #44ffa1;
+    padding: 5px;
+
+}
+
+/*main*/
+
+.heading {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h2 {
+    font-family: 'Fraunces';
+    font-size: 80px;
+    color: white;
+    text-align: center;
+}
+
+h2 :nth-child(1) {
+    text-decoration: underline #44ffa1 4px;
+}
+
+.learn_more {
+    text-decoration: none;
+    font-family: 'Figtree';
+    font-weight: 600;
+    color: black;
+    margin-top: 20px;
+    background-color: #44ffa1;
+    padding: 13px 18px;
+    border: 2px solid #44ffa1;
+    transition: 200ms ease-in;
+}
+
+.learn_more:hover {
+    background-color: #24053e;
+    color: #44ffa1;
+}
+
+.phone {
+    width: 700px;
+    height: 440px;
+    padding-top: 40px;
+}
+
+/*about section*/
+.about {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+
+}
+
+.about1,
+.about2,
+.about3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about1,
+.about2,
+.about3 p {
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.number {
+    font-family: 'Fraunces';
+    font-weight: 800;
+    margin-bottom: 30px;
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+h3 {
+    font-family: 'Fraunces';
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.about_d {
+    font-family: 'Fraunces';
+    color: gray;
+    line-height: 25px;
+}
+
+.testimony {
+    width: 100%;
+    height: 900px;
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+
+.dude {
+    grid-area: 3 / 3;
+}
+
+.circle2 {
+    grid-area: 8 / 7;
+    z-index: 1;
+}
+
+.purple_text {
+    background-color: #24053e;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 15px 30px;
+    grid-area: 6 / 5;
+}
+
+.purple_text :nth-child(1) {
+    font-family: 'Fraunces';
+    font-size: 50px;
+    color: white;
+}
+
+.purple_text :nth-child(2) {
+    font-family: 'Figtree';
+    color: white;
+    line-height: 25px;
+}
+
+.purple_text :nth-child(3) {
+    text-decoration: none;
+    font-family: 'Figtree';
+    font-weight: 600;
+    color: black;
+    margin-top: 20px;
+    background-color: #44ffa1;
+    padding: 13px 18px;
+    border: 2px solid #44ffa1;
+    transition: 200ms ease-in;
+    width: 125px;
+}
+
+.purple_text :nth-child(3):hover {
+    background-color: #24053e;
+    color: #44ffa1;
+
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media(max-width:1180px) {
+
+    nav :nth-child(n) {
+        color: white;
+        margin: 0px 30px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    h1 :nth-child(1) {
+        margin: 0;
+        font-weight: 400;
+    }
+
+    nav :nth-child(2) {
+        font-size: 20px;
+        font-weight: 400;
+        border-bottom: 3px solid #44ffa1;
+        padding: 5px;
+
+    }
+
+    .phone {
+        width: 650px;
+        height: 390px;
+        padding-top: 40px;
+    }
+
+    .about {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 500px;
+
+    }
+
+    .about1,
+    .about2,
+    .about3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .about1,
+    .about2,
+    .about3 p {
+
+        text-align: left;
+    }
+
+    .number {
+        margin-top: 20px;
+    }
+
+    .dude {
+        width: 300px;
+        height: 300px;
+        grid-area: 3 / 2;
+    }
+
+    .purple_text {
+        background-color: #24053e;
+        width: 400px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 60px 45px;
+        grid-area: 5 / 4;
+    }
+
+    .purple_text :nth-child(1) {
+        font-family: 'Fraunces';
+        font-size: 40px;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .purple_text :nth-child(2) {
+        font-family: 'Figtree';
+        color: white;
+        line-height: 25px;
+    }
+
+    .circle2 {
+        grid-area: 7 / 7;
+        z-index: 1;
+    }
+}
+
+
+@media(max-width:703px) {
+    .purple_text {
+        background-color: #24053e;
+        width: 400px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 60px 45px;
+        grid-area: 5 / 2;
+    }
+
+    .dude {
+        width: 300px;
+        height: 300px;
+        grid-area: 3 / 4;
+    }
+
+
+
+    .phone {
+        width: 350px;
+        height: 300px;
+        padding-top: 40px;
+    }
+}
+
+@media(max-width:550px) {
+    .purple_text {
+        background-color: #24053e;
+        width: 280px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 60px 45px;
+        grid-area: 5 / 1;
+    }
+
+    .dude {
+        width: 300px;
+        height: 300px;
+        grid-area: 3 / 2;
+    }
+
+
+
+    .phone {
+        width: 350px;
+        height: 300px;
+        padding-top: 40px;
+    }
+
+    .circle2 {
+        grid-area: 8 / 1;
+        z-index: -1;
+    }
+}
+
+@media(max-width:390px) {
+    nav :nth-child(n) {
+        color: white;
+        margin: 0px 30px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    h1 :nth-child(1) {
+        margin: 0;
+        font-weight: 800;
+    }
+
+    nav :nth-child(2) {
+        font-size: 20px;
+        font-weight: 400;
+        border-bottom: 3px solid #44ffa1;
+        padding: 5px;
+
+    }
+
+    .phone {
+        width: 350px;
+        height: 300px;
+        padding-top: 40px;
+    }
+
+    .purple_text {
+        background-color: #24053e;
+        width: 280px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 60px 45px;
+        grid-area: 6 / 1;
+    }
+
+    .circle2 {
+        grid-area: 8 / 4;
+        z-index: -1;
+    }
+
+    h2 {
+        font-family: 'Fraunces';
+        font-size: 70px;
+        color: white;
+        text-align: center;
+    }
+}
